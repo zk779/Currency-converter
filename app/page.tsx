@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps, @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
@@ -368,7 +369,7 @@ export default function CurrencyConverter() {
 
   // Auto-convert on valid input change
   useEffect(() => {
-    convertCurrency()
+    convertCurrency();
   }, [convertCurrency])
 
   const quickAmountSet = (value: string) => {

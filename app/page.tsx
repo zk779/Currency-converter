@@ -361,10 +361,10 @@ export default function CurrencyConverter() {
 
   // Initial fetch and auto-refresh
   useEffect(() => {
-    fetchExchangeRates()
-    const interval = setInterval(() => fetchExchangeRates(fromCurrency), 60000)
-    return () => clearInterval(interval)
-  }, [fromCurrency])
+    fetchExchangeRates();
+    const interval = setInterval(() => fetchExchangeRates(fromCurrency), 60000);
+    return () => clearInterval(interval);
+  }, [fromCurrency]);
 
   // Auto-convert on valid input change
   useEffect(() => {

@@ -720,7 +720,7 @@ export default function CurrencyConverter() {
                       </div>
                       <div className="text-right">
                         <div className="flex items-center space-x-2">
-                          <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent">
+                          <span className="inline-block font-bold text-xl bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent dark:bg-gradient-to-bl dark:from-blue-200 dark:to-blue-400">
                             {rate ? rate.toFixed(4) : "—"}
                           </span>
                           {trend && trend !== "same" && (
@@ -884,7 +884,7 @@ export default function CurrencyConverter() {
 
 
         <div className="max-w-5xl mx-auto mb-12">
-          <Card className="bg-card/90 backdrop-blur-sm shadow-xl rounded-3xl border border-border">
+          <Card className="bg-card/20 backdrop-blur-sm shadow-xl rounded-3xl border border-border">
             <CardHeader className="pb-6">
               <CardTitle className="flex items-center space-x-3 text-2xl">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-700 rounded-2xl flex items-center justify-center">
@@ -989,7 +989,7 @@ export default function CurrencyConverter() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   )
 }
 
